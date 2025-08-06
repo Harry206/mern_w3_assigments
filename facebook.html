@@ -1,28 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Facebook Login & Signup</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e9ebee;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      background-color: #1877f2;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 32px;
+      font-weight: bold;
+    }
+
+    .main {
+      display: flex;
+      justify-content: center;
+      gap: 60px;
+      padding: 50px;
+    }
+
+    .form-box {
+      background-color: white;
+      border: 1px solid #dddfe2;
+      padding: 30px;
+      width: 320px;
+      box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    }
+
+    .form-box h2 {
+      text-align: center;
+      color: #1877f2;
+      margin-bottom: 20px;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 12px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccd0d5;
+      border-radius: 4px;
+    }
+
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 10px;
+      background-color: #1877f2;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #145dbf;
+    }
+
+    .note {
+      font-size: 13px;
+      color: #606770;
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .footer {
+      background-color: #f5f6f7;
+      text-align: center;
+      padding: 15px;
+      color: #90949c;
+      font-size: 14px;
+      margin-top: 50px;
+    }
+  </style>
 </head>
 <body>
-    <h1>Facebook</h1>
 
-    <form>
-    <label for="email">Email or phone:</label><br>
-    <input type="text" id="email" name="email"><br><br>
+  <div class="header">
+    facebook
+  </div>
 
-    <label for="password">Password:</label><br>
-    <input type="text" id="password" name="password"><br><br>
+  <div class="main">
+    <!-- Login Form -->
+    <div class="form-box">
+      <h2>Login</h2>
+      <form>
+        <label for="login-email">Email or Phone</label>
+        <input type="text" id="login-email" name="login-email">
 
-    <input type="submit" value="Log In"><br><br>
+        <label for="login-password">Password</label>
+        <input type="password" id="login-password" name="login-password">
 
-    <a href="#">Forgotten password?</a><br><br>
+        <button type="submit">Log In</button>
+      </form>
+      <p class="note">Forgotten account? Use Signup below.</p>
+    </div>
 
-    <hr>
+    <!-- Signup Form -->
+    <div class="form-box">
+      <h2>Create Account</h2>
+      <form>
+        <label for="signup-fname">First Name</label>
+        <input type="text" id="signup-fname" name="signup-fname">
 
-    <button>Create new account</button>
-  </form>
-  
+        <label for="signup-lname">Last Name</label>
+        <input type="text" id="signup-lname" name="signup-lname">
+
+        <label for="signup-email">Email or Phone</label>
+        <input type="text" id="signup-email" name="signup-email">
+
+        <label for="signup-password">New Password</label>
+        <input type="password" id="signup-password" name="signup-password">
+
+        <button type="submit">Sign Up</button>
+      </form>
+      <p class="note">It's quick and easy.</p>
+    </div>
+  </div>
+
+  <div class="footer">
+    &copy; 2025 Facebook, Inc.
+  </div>
+
 </body>
 </html>
