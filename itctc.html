@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>IRCTC Login & Signup</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e6f2ff;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      background-color: #003366;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .main {
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+      padding: 50px;
+    }
+
+    .form-box {
+      background-color: #ffffff;
+      border: 1px solid #cccccc;
+      padding: 30px;
+      width: 300px;
+      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-box h2 {
+      text-align: center;
+      color: #003366;
+      margin-bottom: 20px;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 10px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #cccccc;
+      border-radius: 4px;
+    }
+
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 10px;
+      background-color: #0059b3;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #004080;
+    }
+
+    .note {
+      font-size: 12px;
+      color: gray;
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    .footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>Welcome to IRCTC Portal</h1>
+  </div>
+
+  <div class="main">
+    <!-- Login Form -->
+    <div class="form-box">
+      <h2>Login</h2>
+      <form>
+        <label for="login-username">Username or Email</label>
+        <input type="text" id="login-username" name="login-username">
+
+        <label for="login-password">Password</label>
+        <input type="password" id="login-password" name="login-password">
+
+        <button type="submit">Login</button>
+      </form>
+      <p class="note">Don't have an account? Use the Signup form.</p>
+    </div>
+
+    <!-- Signup Form -->
+    <div class="form-box">
+      <h2>Signup</h2>
+      <form>
+        <label for="signup-username">Username</label>
+        <input type="text" id="signup-username" name="signup-username">
+
+        <label for="signup-email">Email</label>
+        <input type="email" id="signup-email" name="signup-email">
+
+        <label for="signup-password">Password</label>
+        <input type="password" id="signup-password" name="signup-password">
+
+        <label for="signup-confirm">Confirm Password</label>
+        <input type="password" id="signup-confirm" name="signup-confirm">
+
+        <button type="submit">Signup</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2025 IRCTC | All Rights Reserved</p>
+  </div>
+
+</body>
+</html>
